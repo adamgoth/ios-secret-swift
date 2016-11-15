@@ -12,6 +12,8 @@
 		F9B141DC1DDB4D1300AA6221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B141DA1DDB4D1300AA6221 /* Main.storyboard */; };
 		F9B141DE1DDB4D1300AA6221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B141DD1DDB4D1300AA6221 /* Assets.xcassets */; };
 		F9B141E11DDB4D1300AA6221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B141DF1DDB4D1300AA6221 /* LaunchScreen.storyboard */; };
+		F9B141EA1DDB4F6D00AA6221 /* KeychainOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B141E81DDB4F6D00AA6221 /* KeychainOptions.swift */; };
+		F9B141EB1DDB4F6D00AA6221 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B141E91DDB4F6D00AA6221 /* KeychainWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F9B141DD1DDB4D1300AA6221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9B141E01DDB4D1300AA6221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9B141E21DDB4D1300AA6221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B141E81DDB4F6D00AA6221 /* KeychainOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainOptions.swift; sourceTree = "<group>"; };
+		F9B141E91DDB4F6D00AA6221 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F9B141DD1DDB4D1300AA6221 /* Assets.xcassets */,
 				F9B141DF1DDB4D1300AA6221 /* LaunchScreen.storyboard */,
 				F9B141E21DDB4D1300AA6221 /* Info.plist */,
+				F9B141E81DDB4F6D00AA6221 /* KeychainOptions.swift */,
+				F9B141E91DDB4F6D00AA6221 /* KeychainWrapper.swift */,
 			);
 			path = "secret-swift";
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					F9B141D21DDB4D1300AA6221 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M685F39Y73;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B141D91DDB4D1300AA6221 /* ViewController.swift in Sources */,
+				F9B141EB1DDB4F6D00AA6221 /* KeychainWrapper.swift in Sources */,
+				F9B141EA1DDB4F6D00AA6221 /* KeychainOptions.swift in Sources */,
 				F9B141D71DDB4D1300AA6221 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +267,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M685F39Y73;
 				INFOPLIST_FILE = "secret-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamgoth.secret-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,7 +281,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M685F39Y73;
 				INFOPLIST_FILE = "secret-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamgoth.secret-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
